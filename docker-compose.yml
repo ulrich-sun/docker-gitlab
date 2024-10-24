@@ -1,5 +1,3 @@
-version: '2.3'
-
 services:
   redis:
     restart: always
@@ -22,7 +20,7 @@ services:
 
   gitlab:
     restart: always
-    image: sameersbn/gitlab:17.5.0
+    image: sameersbn/gitlab:latest
     depends_on:
     - redis
     - postgresql
